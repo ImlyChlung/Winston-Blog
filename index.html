@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Winston Blog，展示我的技能和作品" />
+  <title>Winston Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 背景影片 -->
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+    您的瀏覽器不支援影片播放。
+  </video>
+
+  <!-- 導航欄 -->
+  <nav class="navbar">
+    <div class="logo" data-i18n="logo">Winston Blog</div>
+    <ul class="nav-links">
+      <li><a href="#home" data-i18n="nav-home">主頁</a></li>
+      <li><a href="#about" data-i18n="nav-about">關於我</a></li>
+      <li><a href="#skills" data-i18n="nav-skills">個人技能</a></li>
+      <li><a href="#portfolio" data-i18n="nav-portfolio">作品集</a></li>
+      <li><a href="#contact" data-i18n="nav-contact">聯繫我</a></li>
+    </ul>
+    <div class="lang-toggle" data-i18n="lang-toggle">EN</div>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- 首頁區塊 -->
+  <section id="home" class="section">
+    <div class="content">
+      <h1 class="fade-in" data-i18n="home-title">歡迎來到我的個人網站！</h1>
+      <p class="fade-in" data-i18n="home-desc">在這裡你可以了解到我的故事，技能，作品集，希望你喜歡我製作的網站！</p>
+      <a href="#about" class="btn highlight-btn fade-in" data-i18n="home-btn">關於我</a>
+    </div>
+  </section>
+
+  <!-- 關於我區塊 -->
+  <section id="about" class="section">
+    <div class="content">
+      <h2 class="fade-in" data-i18n="about-title">關於我</h2>
+      <p class="fade-in" data-i18n="about-desc-1">我是 Winston，一位對數據分析與人工智能充滿熱情的探索者！大學主修理論物理學，為我奠定了紮實而嚴謹的數學基礎，這使我在程式設計、機器學習以及投資分析等領域具備獨特的後發優勢。</p>
+      <p class="fade-in" data-i18n="about-desc-2">原本，我的夢想是成為一名物理學者。然而在香港，相關的深造與就業機會十分有限，於是我決定將數學的專長轉化為數據分析與人工智能的能力。這段轉型之路不僅讓我找到新的方向，也帶來了實際成果，歡迎查看下面的作品集，它們充分體現了數學思維與跨領域應用的力量！</p>
+      <p class="fade-in" data-i18n="about-desc-3">如今，我深深熱愛數據分析，並立志成為一名能夠結合理論與實務、用數據驅動價值的數據科學家！</p>
+    </div>
+  </section>
+
+  <!-- 個人技能區塊 -->
+  <section id="skills" class="section">
+    <div class="content">
+      <h2 class="fade-in" data-i18n="skills-title">個人技能</h2>
+      <div class="skills-wide-grid">
+        <!-- 第一排 -->
+        <div class="wide-skill-card" data-skill="Mathematic">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/maths-logo.png" alt="Mathematic" class="skill-logo">
+              <div class="skill-name">Mathematic</div>
+            </div>
+          </div>
+        </div>
+        <div class="wide-skill-card" data-skill="Python" data-related="Mathematic">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/python-logo.png" alt="Python" class="skill-logo">
+              <div class="skill-name">Python</div>
+            </div>
+          </div>
+        </div>
+        <div class="wide-skill-card" data-skill="Physics" data-related="Mathematic">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/physics-logo.png" alt="Physics" class="skill-logo">
+              <div class="skill-name">Physics</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第二排 -->
+        <div class="wide-skill-card" data-skill="Web Develop">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/web-logo.png" alt="Web Develop" class="skill-logo">
+              <div class="skill-name">Web Develop</div>
+            </div>
+          </div>
+        </div>
+        <div class="wide-skill-card" data-skill="Data Analytics" data-related="Mathematic,Python">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/data-analysis-logo.png" alt="Data Analytics" class="skill-logo">
+              <div class="skill-name">Data Analytics</div>
+            </div>
+          </div>
+        </div>
+        <div class="wide-skill-card" data-skill="MySQL" data-related="Data Analytics">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/MySQL-logo.png" alt="MySQL" class="skill-logo">
+              <div class="skill-name">MySQL</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 第三排 -->
+        <div class="wide-skill-card" data-skill="Tableau" data-related="Data Analytics">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/tableau-Logo.png" alt="Tableau" class="skill-logo">
+              <div class="skill-name">Tableau</div>
+            </div>
+          </div>
+        </div>
+        <div class="wide-skill-card" data-skill="Deep Learning" data-related="Python,Data Analytics">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/deeplearning-logo.png" alt="Deep Learning" class="skill-logo">
+              <div class="skill-name">Deep Learning</div>
+            </div>
+          </div>
+        </div>
+        <div class="wide-skill-card" data-skill="Pytorch" data-related="Deep Learning,Data Analytics">
+          <div class="card-content">
+            <div class="left-side">
+              <img src="logo/pytorch-logo.png" alt="Pytorch" class="skill-logo">
+              <div class="skill-name">Pytorch</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品集區塊 -->
+  <section id="portfolio" class="section">
+    <div class="content">
+      <h2 class="fade-in" data-i18n="portfolio-title">作品集</h2>
+      <div class="portfolio-container">
+        <!-- 作品 1 -->
+        <div class="portfolio-card fade-in">
+          <div class="project-image">
+            <img src="/portfolio/website-portfolio.png" alt="Winston Blog 個人網站">
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="portfolio-item1-title">我的網站</h3>
+            <p data-i18n="portfolio-item1-desc">網站主題是宇宙，那是我最初的夢想，我想做一個研究神秘宇宙的學者，即使我從今後可能不會再接觸物理，但這不妨礙我的熱愛。</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 2 -->
+        <div class="portfolio-card fade-in">
+          <div class="project-image">
+            <img src="/portfolio/trading-portfolio.png" alt="股票模擬交易器">
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="portfolio-item2-title">股票模擬交易器</h3>
+            <p data-i18n="portfolio-item2-desc">模擬交易器讓用戶能夠深入研究其量化策略在過往市場環境下的表現與穩定性。</p>
+            <div class="tags">
+              <span>Python</span><span>Data Analysis</span><span>Quantitative Analysis</span><span>Backtesting</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/ImlyChlung/Trading-Simulator" target="_blank" class="btn github-btn" data-i18n="portfolio-view-code">GitHub 原始碼</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 作品 3 -->
+        <div class="portfolio-card fade-in">
+          <div class="project-image">
+            <img src="/portfolio/GARCH-LSTM-portfoilo.png" alt="GARCH-LSTM">
+          </div>
+          <div class="project-info">
+            <h3 data-i18n="portfolio-item3-title">GARCH-LSTM</h3>
+            <p data-i18n="portfolio-item3-desc">以GARCH預測股票波動率並以LSTM神經網絡增強預測準確性，模型主要用於資產風險管理</p>
+            <div class="tags">
+              <span>Pytorch</span><span>Deep Learning</span><span>Quantitative Analysis</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/ImlyChlung/GARCH-LSTM" target="_blank" class="btn github-btn" data-i18n="portfolio-view-code">GitHub 原始碼</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 聯繫我區塊 -->
+  <section id="contact" class="section">
+    <div class="content">
+      <h2 class="fade-in" data-i18n="contact-title">聯繫我</h2>
+      <div class="contact-container-white fade-in">
+        <div class="contact-item-white">
+          <div class="contact-icon-white">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+          </div>
+          <div class="contact-info-white">
+            <h4 data-i18n="contact-email-label">電子郵件</h4>
+            <a href="mailto:winstonchoi02@gmail.com" class="contact-link-white">winstonchoi02@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item-white">
+          <div class="contact-icon-white">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div class="contact-info-white">
+            <h4 data-i18n="contact-github-label">GitHub</h4>
+            <a href="https://github.com/ImlyChlung" target="_blank" class="contact-link-white">github.com/ImlyChlung</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁腳 -->
+  <footer>
+    <p data-i18n="footer">© 2025 Winston. All Rights Reserved.</p>
+  </footer>
+
+  <!-- 引入外部 JS -->
+  <script src="script.js"></script>
+</body>
+</html>
